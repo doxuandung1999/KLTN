@@ -5,14 +5,15 @@ export const notifications = {
     files: []
   }),
 
-  ShareFileMessageRegex : new RegExp('^(.*) "@share (.*)"'),
+  // ShareFileMessageRegex : new RegExp('^(.*) "@share (.*)"'),
 
   mutations : {
     addNotification(state, payload) {
       const notification = payload
 
+      var ShareFileMessageRegex = new RegExp('^(.*) "@share (.*)"')
       let text = payload.text
-      const match = this.ShareFileMessageRegex.exec(text)
+      const match = ShareFileMessageRegex.exec(text)
 
       if (match) {
         let parts = payload.text.split(" ")

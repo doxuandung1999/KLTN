@@ -10,7 +10,7 @@
           @click="tabSelected = tab.People"
         >
           <span class="mr-2" >
-            <font-awesome-icon :icon="['fas', 'user']"  />
+            <!-- <font-awesome-icon :icon="['fas', 'user']"  /> -->
           </span>
           Mọi người ({{ listParticipant.length }})
         </div>
@@ -29,7 +29,7 @@
           @click="tabSelected = tab.File"
         >
           <span class="mr-2">
-            <font-awesome-icon :icon="['fas', 'file']" />
+            <!-- <font-awesome-icon :icon="['fas', 'file']" /> -->
           </span>
           Tệp tin ({{ listFile.length }})
         </div>
@@ -62,7 +62,7 @@
       <!-- tab file -->
       <div class="file-tab" v-if="tabSelected == tab.File">
         <div class="add-file">
-          <font-awesome-icon :icon="['fas', 'plus']" />
+          <!-- <font-awesome-icon :icon="['fas', 'plus']" /> -->
           Thêm tệp tin
           <input
             type="file"
@@ -76,7 +76,7 @@
             <div class="file-author">{{ file.AuthorName }}</div>
             <div class="file-name">
               <a class="mr-3 mb-1 pointer" :href="'https://' + this.hostname + file.url">
-                <font-awesome-icon :icon="['fas', 'download']" />
+                <!-- <font-awesome-icon :icon="['fas', 'download']" /> -->
               </a>
 
               <div class="name" :title="file.FileName">{{ file.url }}</div>
@@ -125,14 +125,14 @@
         placeholder="Gửi tin nhắn cho mọi người"
       ></div>
       <button class="btn-send">
-        <font-awesome-icon
+        <!-- <font-awesome-icon
           :icon="['fas', 'paper-plane']"
           @click="sendMessage()"
-        />
+        /> -->
       </button>
     </div>
     <div class="close" @click="hidenRightBar()">
-      <font-awesome-icon :icon="['fas', 'times']" />
+      <!-- <font-awesome-icon :icon="['fas', 'times']" /> -->
     </div>
   </div>
 </template>

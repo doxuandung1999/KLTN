@@ -36,10 +36,10 @@
       <div class="me-button-container">
         <div class="icons flex-a">
           <span class="mr-2 pointer flex-c-m icon-28 ml-1" title="Mọi người">
-            <font-awesome-icon
+            <!-- <font-awesome-icon
               :icon="['fas', 'users']"
               @click="showRightBar(tab.People)"
-            />
+            /> -->
           </span>
           <!-- <span class="mr-2 pointer flex-c-m icon-28 ">
             <font-awesome-icon
@@ -48,16 +48,16 @@
             />
           </span> -->
           <span class="mr-2 pointer flex-c-m icon-28 " title="Tệp tin">
-            <font-awesome-icon
+            <!-- <font-awesome-icon
               :icon="['fas', 'file']"
               @click="showRightBar(tab.File)"
-            />
+            /> -->
           </span>
           <span class="mr-2 pointer flex-c-m icon-28 " title="Sao chép phòng">
-            <font-awesome-icon
+            <!-- <font-awesome-icon
               :icon="['fas', 'clone']"
               @click="onInvitationLinkClick"
-            />
+            /> -->
           </span>
         </div>
       </div>
@@ -71,7 +71,7 @@
           title="ẩn/hiện video"
           @click="toggleParticipantsVideo"
         >
-          <font-awesome-icon :icon="['fas', 'video']" />
+          <!-- <font-awesome-icon :icon="['fas', 'video']" /> -->
         </div>
 
         <div
@@ -80,7 +80,7 @@
           title="Tắt/bật audio"
           @click="toggleMute"
         >
-          <font-awesome-icon :icon="['fas', 'microphone']" />
+          <!-- <font-awesome-icon :icon="['fas', 'microphone']" /> -->
         </div>
         <div
           class="button share-screen  flex-c-m mr-3"
@@ -91,7 +91,7 @@
           }"
           @click="toggleShare"
         >
-          <font-awesome-icon :icon="['fas', 'share']" />
+          <!-- <font-awesome-icon :icon="['fas', 'share']" /> -->
         </div>
 
  
@@ -100,7 +100,7 @@
           title="Thoát"
           @click="stopCall"
         >
-          <font-awesome-icon :icon="['fas', 'phone']" />
+          <!-- <font-awesome-icon :icon="['fas', 'phone']" /> -->
         </div>
 
         <!--        <div-->
